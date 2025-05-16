@@ -35,3 +35,16 @@ Here's the download speed test result of this setup on google cloud e2.micro (2 
 | 162.4 Mbps  | 49.1 Mbps     | 3.09 Mbps | 132.3 Mbps |
 
 Obviously this setup is not the fastest. Its not even close to the whopping 132.3 Mbps download rate of TurboVPN. But it doesn't show you any ads. Its reliable. Every aspect of the server are in your control and its super cheap. If you shutdown the server when not in use and use spot instances, you bills could be as low as US $0.07 per month. Even if you choose not to shutdown the server, running a e2.micro 24/7 only cost less than $4.27 per month (using spot VM)
+
+### FAQs
+
+#### Are personal VPN servers worth it?
+It depends. Personal servers are mostly intended for hobbyists, who are willing to spare some loose change for their own private virtual server. For most people, it is an overkill
+
+- Yes, if you hate watching ads, but you are ok with going through the hassle of shutting down the server when not in use, and waiting 15-20 seconds for the server to boot up before connecting.
+- No, if you are ok with ads and want multiple VPN location to choose from
+
+However as far as I have noticed, paying for low end virtual server might often be cheaper that paying for a VPN premium ($4.27 for E2.micro vs $13.2 for TurboVPN). But these low end servers might not be so adept in continuous 4k streaming
+
+#### How much are the cloud bills
+If you diligently shut down the server when not in use, the bills cpuld be as low as US **$0.07** (seriously). But if you keep it running 24/7, the bills could still be cheap (about $4.27), if you use the cheapest configuration in you cloud service provider (like using micro instances)
