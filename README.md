@@ -28,8 +28,10 @@ And that's it. You VPN is now up and running
 
 ## Performance
 
-Here's the speed test result of this setup on google cloud e2.micro (2 vcpu; 1 Gb) instance running debian:
+Here's the download speed test result of this setup on google cloud e2.micro (2 vcpu; 1 Gb) standard network tier instance running debian:
 
-| Without VPN | TaurusVPN | COLUMN 3 |
-|----------|----------|----------|
-| 72.1 Mbps  | 46.0 Mbps     | More     |
+| Without VPN | \*TaurusVPN\* | Opera VPN | Turbo VPN  |
+|-------------|---------------|-----------|------------|
+| 162.4 Mbps  | 49.1 Mbps     | 3.09 Mbps | 132.3 Mbps |
+
+Obviously this setup is not the fastest. Its not even close to the whopping 132.3 Mbps download rate of TurboVPN. But it doesn't show you any ads. Its reliable. Every aspect of the server are in your control and its super cheap. If you shutdown the server when not in use and use spot instances, you bills could be as low as US $0.07 per month. Even if you choose not to shutdown the server, running a e2.micro 24/7 only cost less than $4.27 per month (using spot VM)
