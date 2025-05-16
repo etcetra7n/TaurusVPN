@@ -1,5 +1,5 @@
 # TaurusVPN
-You can set up your own private VPN server, dedicated for serving your devices for a very cheap price. You can use popular and cheap cloud computes instances like aws ec2, google cloud compute engine etc. You only need 1-2 Gb memory and 1-4 vCPUs. The below setup is for debian. The setup may vary for other distros. But the general steps are the same
+You can set up your own private VPN server, dedicated for serving your devices at a very cheap price. You can use popular and cheap cloud computes instances like aws ec2, google cloud compute engine etc. You only need 1-2 Gb memory and 2 vCPUs for most usage patterns. The below setup is for debian. The setup may vary for other distros. But the general steps are the same
 
 ### Step 1: Install wireguard on server
 ```sh
@@ -17,8 +17,8 @@ wg genkey | tee client_private | wg pubkey > client_public
 1. Make sure server firewall rules allows outbound traffic to public internet and inbound traffic to UDP port 51820
 1. Copy `server.conf` and paste it in `/etc/wireguard/wg0.conf`
 2. Start server: `sudo wg-quick up wg0`
-3. Enable service: `sudo systemctl enable wg-quick@wg0`
-4. Verify running: `sudo wg show`
+3. Enable as service: `sudo systemctl enable wg-quick@wg0`
+4. Verify using: `sudo wg show`
 
 ### Step 4: Configure clientside
 1. Install VPN tunnelling apps like wireguard from play store
