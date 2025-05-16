@@ -41,7 +41,7 @@ Obviously this setup is not the fastest. Its not even close to the whopping 132.
 #### Are personal VPN servers worth it?
 It depends. Personal servers are mostly intended for hobbyists, who are willing to spare some loose change for their own private virtual server. For most people, it is an overkill
 
-- Yes, if you hate watching ads, but you are ok with going through the hassle of shutting down the server when not in use, and waiting 15-20 seconds for the server to boot up before connecting.
+- Yes, if you hate watching ads, but you are ok with going through the hassle of shutting down the server when not in use, and waiting 5-10 seconds for the server to boot up before connecting.
 - No, if you are ok with ads and want multiple VPN location to choose from
 
 However as far as I have noticed, paying for low end virtual server might often be cheaper that paying for a VPN premium ($4.27/month for E2.micro vs $13.2/month for TurboVPN). But these low end servers might not be so adept in continuous 4k streaming
