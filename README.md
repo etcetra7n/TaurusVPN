@@ -1,5 +1,5 @@
 # TaurusVPN
-You can set up your own private VPN server, only for your devices for a very cheap price. You can use popular and cheap cloud computes instances like aws ec2, google cloud compute engine etc. You only need 1-2 Gb memory and 0.5-2 vCPUs. The below setup is for debian. The setup may vary for other distros. But the general steps are the same
+You can set up your own private VPN server, only for your devices for a very cheap price. You can use popular and cheap cloud computes instances like aws ec2, google cloud compute engine etc. You only need 1-2 Gb memory and 1-4 vCPUs. The below setup is for debian. The setup may vary for other distros. But the general steps are the same
 
 ### Step 1: Install wireguard on server
 ```sh
