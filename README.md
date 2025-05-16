@@ -53,4 +53,4 @@ It depends. Personal servers are mostly intended for hobbyists, who are willing 
 However as far as I have noticed, paying for low end virtual server might often be cheaper that paying for a VPN premium ($4.27/month for E2.micro vs $13.2/month for TurboVPN). But third party VPN services provide hundreds of location while this setup only has a single and fixed location
 
 #### How much are the cloud bills
-If you diligently shut down the server when not in use, the bills could be as low as US **$0.07** (seriously). But if you keep it running 24/7, the bills could still be cheap (about $4.27), if you use the cheapest configuration in you cloud service provider (like using micro instances)
+If you diligently shut down the server when not in use, running the server for 20 minutes on GCP, the bills could be as low as US **$0.03** for one month (seriously). But if you keep it running 24/7, the bills could still be cheap (about $4.27), if you use the cheapest configuration in you cloud service provider (like using micro instances)
