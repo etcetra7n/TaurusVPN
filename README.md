@@ -57,6 +57,7 @@ It depends. Personal servers are mostly intended for hobbyists, who are willing 
 **Cons**
 - Manually start server every time (5-10 boot time)
 - Only one VPN location for each server you setup
+- Hard to setup initially
 
 However as far as I have noticed, paying for low end virtual server might often be cheaper that paying for a VPN premium ($4.27/month for E2.micro vs $13.2/month for TurboVPN). But third party VPN services provide hundreds of location while this setup only has a single and fixed location
 
