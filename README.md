@@ -62,4 +62,4 @@ It depends. Personal servers are mostly intended for hobbyists, who are willing 
 #### How much are the cloud bills
 If you diligently shut down the server when not in use, running the server for 20 minutes a day on GCP, the bills could be as low as US **$0.03** for a whole month (seriously). But if you keep it running 24/7, the bills could still be cheap (about $4.27), if you use the cheapest configuration in you cloud service provider (like using micro instances)
 
-You can estimate your cloud bills using [AWS pricing calculator](https://calculator.aws/) or [Google cloud pricing calculator](https://cloud.google.com/products/calculator)
+You can estimate your cloud bills using [Google cloud pricing calculator](https://cloud.google.com/products/calculator) or [AWS pricing calculator](https://calculator.aws/)
