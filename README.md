@@ -42,7 +42,7 @@ Here's the download speed test result of this setup on google cloud e2.micro (2 
 
 (Benchmarking done using [M-Lab](https://www.measurementlab.net/about/) powered tool, from UTC+05:30 timezone)
 
-That's simoly how fast a personal VPN server can be on a GCP e2.micro. It is reliable and cheap as well. If you shutdown the server when not in use and use spot instances, you bills could be as low as US **$0.03 per month**. Even if you choose not to shutdown the server, running a e2.micro 24/7 only cost less than $4.27 per month (using spot VM)
+It goes without saying how fast a personal VPN server can be with just 1 GB of RAM. It is reliable and cheap as well. If you shutdown the server when not in use and use spot instances, you bills could be as low as US **$0.03 per month**. Even if you choose not to shutdown the server, running a e2.micro 24/7 only cost less than $4.27 per month (using spot VM)
 
 ### FAQs
 
