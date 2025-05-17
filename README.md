@@ -1,7 +1,7 @@
 # TaurusVPN
 You can set up your own private VPN server, dedicated for serving only your devices at a very cheap price. You can use popular and cheap cloud computes instances like aws ec2, google cloud compute engine etc. You only need 1 Gb memory and 2 vCPUs for most usage patterns. The below setup is for debian. The setup may vary for other distros. But the general steps are the same
 
-**Recommended Server requirements (for one VPN client)**
+**Recommended server requirements (for one VPN client)**
 - 2 vCPU (3 if you want to overprovision)
 - 1 Gb (more than enough to stream 4k)
 - 8 Gb disk space (only 3.6 Gb utilized for Debian OS+Wireguard)
