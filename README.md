@@ -38,7 +38,7 @@ Here's the download speed test result of this setup on google cloud e2.micro (2 
 
 | Without VPN | \*TaurusVPN\* | Opera VPN | Turbo VPN  |
 |-------------|---------------|-----------|------------|
-| 162.4 Mbps  | 61.1 Mbps     | 3.09 Mbps | 6.35 Mbps |
+| 162.4 Mbps  | 61.1 Mbps     | 3.09 Mbps | 6.79 Mbps |
 
 Obviously this setup is not the fastest. Its not even close to the whopping 132.3 Mbps download rate of TurboVPN. But it doesn't show you any ads. Its reliable. Every aspect of the server are in your control and its super cheap. If you shutdown the server when not in use and use spot instances, you bills could be as low as US $0.07 per month. Even if you choose not to shutdown the server, running a e2.micro 24/7 only cost less than $4.27 per month (using spot VM)
 
