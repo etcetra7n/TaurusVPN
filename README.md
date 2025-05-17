@@ -50,12 +50,12 @@ It goes without saying how fast a personal VPN server can be with just 1 GB of R
 It depends. Personal servers are mostly intended for hobbyists, who are willing to spare some loose change for their own private virtual server. For most people, it is an overkill. Here's the pros and cons: 
 
 **Pros**
-- High speed
+- Higher speed than most VPN services (~50 Mbps vs ~5 Mbps)
 - No ads
 - Bills as low as $0.03/month
 
 **Cons**
-- Manually start server every time (5-10 boot time)
+- Manually start server every time (5-10 seconds boot time for E2.micro spot)
 - Only one VPN location for each server you setup
 - Hard to setup initially
 
