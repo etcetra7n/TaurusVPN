@@ -38,7 +38,7 @@ Here's the download speed test result of this setup on google cloud e2.micro (2 
 
 | Without VPN | \*TaurusVPN\* | Opera VPN | Turbo VPN  |
 |-------------|---------------|-----------|------------|
-| 162.4 Mbps  | 61.1 Mbps (Oregon)   | 3.09 Mbps (US) | 6.79 Mbps (San Jose) |
+| 162.4 Mbps  | 61.1 Mbps (Oregon)   | 3.09 Mbps (America) | 6.79 Mbps (San Jose) |
 
 (All VPN servers used for benchmark are in US West)
 
