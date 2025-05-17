@@ -47,7 +47,7 @@ It goes without saying how fast a personal VPN server can be with just 1 GB of R
 ### FAQs
 
 #### Are personal VPN servers worth it?
-It depends. Personal servers are mostly intended for hobbyists, who are willing to spare some loose change for their own private virtual server. For most people, it is an overkill. Heres since pros and cons: 
+It depends. Personal servers are mostly intended for hobbyists, who are willing to spare some loose change for their own private virtual server. For most people, it is an overkill. Here's the pros and cons: 
 
 **Pros**
 - High speed
