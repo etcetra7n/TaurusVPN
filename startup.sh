@@ -4,7 +4,7 @@ res=$(curl -s -o /dev/null -w "%{http_code}" --user {DOMAIN}:{PRIVATE KEY} https
 
 if [ "$res" = "200" ]; then
 	(
-		echo Subject: Your server was started at $(TZ="Asia/Kolkata" date +"%H:%M")
+		echo Subject: TaurusVPN: Started at $(TZ="Asia/Kolkata" date +"%H:%M")
 		cat <<-EOF
 		To: {TO EMAIL}@gmail.com
 		From: comm-system-noreply@taurusvpn.com
@@ -16,8 +16,8 @@ if [ "$res" = "200" ]; then
 	) | msmtp {TO EMAIL}@gmail.com
 else
 	(
+		echo Subject: TaurusVPN: Unable to update dynamic IP address
 		cat <<-EOF
-		Subject: TaurusVPN: Unable to update dynamic IP address
 		To: {TO EMAIL}@gmail.com
 		From: comm-system-noreply@taurusvpn.com
 		The desec.io api did not return a positive response to a update ip request. Your server will continue to listen for connection for 4 minutes but you might have to manually update the server IP on the client side. This is an automatic email from the TaurusVPN E2.micro comm system, triggered when the server starts up

@@ -6,14 +6,13 @@ if ! sudo wg show | grep -q "latest handshake"; then # Latest handshake is not f
 	if [ "$uptime_min" -gt 4 ]; then
 		(
 			cat <<-EOF
-			Subject: Your server is shutting down because no connection was recieved
+			Subject: TaurusVPN: Shutting down because no connection was recieved
 			To: {TO EMAIL}@gmail.com
 			From: comm-system-noreply@taurusvpn.com
 			The server is shutting down because no client was connected within 4 minutes of running. This is an automatic email from the TaurusVPN E2.micro comm system
 
 			EOF
 			echo Uptime: $uptime_min min $uptime_sec sec
-			echo Server IP: $(curl -s ifconfig.me)
 			echo Timestamp: $(TZ="Asia/Kolkata" date +"%Y-%M-%d %H:%M:%S") IST
 		) | msmtp {TO EMAIL}@gmail.com
 		sudo /sbin/shutdown now
@@ -27,23 +26,19 @@ if	[ "$last_hs_min" -gt 4 ]; then
 	uptime_sec=$(awk '{print int($1 % 60)}' /proc/uptime)
 	(
 		cat <<-EOF
-		Subject: Your server is shutting down because no active clients are remaining
+		Subject: TaurusVPN: Shutting down because no active clients are remaining
 		To: {TO EMAIL}@gmail.com
 		From: comm-system-noreply@taurusvpn.com
-		Your server is shutting down because 4 minutes have passed since last handshake with the client. This is an automatic email from the TaurusVPN E2.micro comm system
+		Your server is shutting down because 4 minutes have passed since last handshake with a client. This is an automatic email from the TaurusVPN E2.micro comm system
 
 		EOF
-		echo Last handshake: $(sudo wg show | grep 'latest handshake' | awk -F'[:]+' '{print $2}')
 		echo Uptime: $uptime_min min $uptime_sec sec
-		echo
-
 		echo Sent: $(sudo wg show | grep 'transfer' | awk -F'[ ]+' '{print $3} {print $4}')
 		echo Recieved: $(sudo wg show | grep 'transfer' | awk -F'[ ]+' '{print $6} {print$7}')
 		echo
-
 		echo Server IP: $(curl -s ifconfig.me)
 		echo Cleint IP: $(sudo wg show | grep 'endpoint' | awk -F'[:]+' '{print $2}')
-		echo
+		echo Last handshake: $(sudo wg show | grep 'latest handshake' | awk -F'[:]+' '{print $2}')
 	) | msmtp {TO EMAIL}@gmail.com
 	sudo /sbin/shutdown now
 fi
