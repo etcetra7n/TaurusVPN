@@ -3,7 +3,7 @@
 if ! sudo wg show | grep -q "latest handshake"; then # Latest handshake is not found (exit)
 	uptime_min=$(awk '{print int($1 / 60)}' /proc/uptime)
 	uptime_sec=$(awk '{print int($1 % 60)}' /proc/uptime)
-	if [ "$uptime_min" -gt 4 ]; then
+	if [ "$uptime_min" -ge 4 ]; then
 		(
 			cat <<-EOF
 			Subject: TaurusVPN: Shutting down because no connection was recieved
@@ -21,7 +21,7 @@ if ! sudo wg show | grep -q "latest handshake"; then # Latest handshake is not f
 fi
 
 last_hs_min=$(sudo wg show | grep -oP 'latest handshake: \K[0-9]+(?= minutes?)')
-if	[ "$last_hs_min" -gt 4 ]; then
+if	[ "$last_hs_min" -ge 4 ]; then
 	uptime_min=$(awk '{print int($1 / 60)}' /proc/uptime)
 	uptime_sec=$(awk '{print int($1 % 60)}' /proc/uptime)
 	(
