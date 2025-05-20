@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! sudo wg show | grep -q "latest handshake"; then # Latest handshake is not found (exit)
+if ! sudo wg show | grep -q "latest handshake"; then # Latest handshake is not found
 	uptime_min=$(awk '{print int($1 / 60)}' /proc/uptime)
 	uptime_sec=$(awk '{print int($1 % 60)}' /proc/uptime)
 	if [ "$uptime_min" -ge 4 ]; then
